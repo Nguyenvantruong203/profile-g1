@@ -1,222 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="../src/input.css"> -->
     <link href="./output.css" rel="stylesheet" />
     <title>Document</title>
-  </head>
 
-  <body id="body" class="">
+</head>
+
+<body id="body" class="">
     <!-- ae code vào file index và input.css nha  -->
 
-    <!-- menu tuong-->
+    <div class="flex text-base">
+        <!-- menu tuong-->
+        <div class="w-1/6">menu</div>
+        <div class="w-5/6">
+            <!-- nav linh -->
+            <div class="navbar__top flex items-center justify-between fixed top-0 right-0 left-72 bg-slate-100 h-14">
+                <div class="basis-5/6 flex items-center w-28">
+                    <i class="p-2 mx-2 icon__nav cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                        </svg>
+                    </i>
+                    <img class="w-24"
+                        src="https://www.ns-businesshub.com/wp-content/uploads/sites/11/2018/08/Luno_Logo_Blue_Large-1024x293.png"
+                        alt="logo" />
+                    <input class="focus:border-blue-400 w-full px-2 py-1 mx-3 my-2 rounded-md hover:cursor-pointer"
+                        type="text" placeholder="input your text" />
+                </div>
+                <div class="basic-1/6 flex items-center">
+                    <i class="icon__nav py-2 px-3 rounded-md hover:bg-cyan-400 cursor-pointer">Notifacation</i>
+                    <i class="icon__nav zoomScreen hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md"
+                        onclick="openFullscreen()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+                        </svg>
+                    </i>
 
-    <!-- nav linh -->
-    <div
-      class="navbar__top flex items-center justify-between fixed top-0 right-0 left-72 bg-slate-100 h-14"
-    >
-      <div class="basis-5/6 flex items-center w-28">
-        <i class="p-2 mx-2 icon__nav cursor-pointer">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-            />
-          </svg>
-        </i>
-        <img
-          class="w-24"
-          src="https://www.ns-businesshub.com/wp-content/uploads/sites/11/2018/08/Luno_Logo_Blue_Large-1024x293.png"
-          alt="logo"
-        />
-        <input
-          class="focus:border-blue-400 w-full px-2 py-1 mx-3 my-2 rounded-md hover:cursor-pointer"
-          type="text"
-          placeholder="input your text"
-        />
-      </div>
-      <div class="basic-1/6 flex items-center">
-        <i
-          class="icon__nav py-2 px-3 rounded-md hover:bg-cyan-400 cursor-pointer"
-          >Notifacation</i
-        >
-        <i
-          class="icon__nav zoomScreen hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md"
-          onclick="openFullscreen()"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
-            />
-          </svg>
-        </i>
+                    <i class="change__language relative icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md"
+                        onmouseover="listLanguage()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="change__languageSVG w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
+                        </svg>
+                        <div
+                            class="modal_language absolute top-12 right-0 w-40 hidden border-dashed border-2 border-gray-400 rounded-md">
+                            <div class="flex items-center px-3 py-1 bg-purple-200 hover:bg-slate-600 rounded-md">
+                                <i class="w-1/5"><img src="https://kenh14cdn.com/2017/2-1503128133740.png"
+                                        alt="anh" /></i>
+                                <p class="ml-2">UK English</p>
+                            </div>
+                            <div class="flex items-center px-3 py-1 bg-purple-200 hover:bg-slate-600 rounded-md">
+                                <i class="w-1/5"><img
+                                        src="https://hangkhongmy.vn/wp-content/uploads/2018/08/bi-an-trong-la-co-nuoc-my-1.png"
+                                        alt="my" /></i>
+                                <p class="ml-2">US English</p>
+                            </div>
+                            <div class="flex items-center px-3 py-1 bg-purple-200 hover:bg-slate-600 rounded-md">
+                                <i class="w-1/5"><img
+                                        src="https://th.bing.com/th/id/OIP.WiiE2MA4RS46HmLgfsbXdwAAAA?pid=ImgDet&rs=1"
+                                        alt="duc" /></i>
+                                <p class="ml-2">Germany</p>
+                            </div>
+                            <div class="flex items-center px-3 py-1 bg-purple-200 hover:bg-slate-600 rounded-md">
+                                <i class="w-1/5"><img
+                                        src="https://th.bing.com/th/id/OIP.WiiE2MA4RS46HmLgfsbXdwAAAA?pid=ImgDet&rs=1"
+                                        alt="duc" /></i>
+                                <p class="ml-2">Hindi</p>
+                            </div>
+                            <div class="flex items-center px-3 py-1 bg-purple-200 hover:bg-slate-600 rounded-md">
+                                <i class="w-1/5"><img
+                                        src="https://th.bing.com/th/id/OIP.WiiE2MA4RS46HmLgfsbXdwAAAA?pid=ImgDet&rs=1"
+                                        alt="duc" /></i>
+                                <p class="ml-2">Saudi Arabia</p>
+                            </div>
+                        </div>
+                    </i>
+                    <i class="icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md"><svg
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z" />
+                        </svg>
+                    </i>
+                    <i onclick="onNight(this)"
+                        class="night icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md"><svg
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                        </svg>
+                    </i>
+                    <i class="icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md w-14"><img
+                            class="rounded-full"
+                            src="https://i.pinimg.com/originals/26/ee/73/26ee73636f3429e3df522ae219c064fd.png"
+                            alt="avatar" /></i>
+                    <i class="icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md"><svg
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </i>
+                </div>
+            </div>
 
-        <i
-          class="change__language relative icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md"
-          onmouseover="listLanguage()"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="change__languageSVG w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"
-            />
-          </svg>
-          <div
-            class="modal_language absolute top-12 right-0 w-40 hidden border-dashed border-2 border-gray-400 rounded-md"
-          >
-            <div
-              class="flex items-center px-3 py-1 bg-purple-200 hover:bg-slate-600 rounded-md"
-            >
-              <i class="w-1/5"
-                ><img
-                  src="https://kenh14cdn.com/2017/2-1503128133740.png"
-                  alt="anh"
-              /></i>
-              <p class="ml-2">UK English</p>
+
+            <!-- profile truong -->
+            <div class="profile">
+                <div class="flex gap-4 text-color-text mb-6 ml-6">
+                    <h3>Home</h3> <span> / </span>
+                    <h3>Crafted pages</h3> <span> / </span>
+                    <h3 class="text-gray-500">My Profile</h3>
+                </div>
+                <div class="flex justify-between mr-20 mb-10">
+                    <div class=" ml-6">
+                        <h1 class="text-xl">Welcome back, Allie!</h1>
+                        <h5 class="text-gray-500">You have 12 new messages and 7 new notifications.</h5>
+                    </div>
+                    <div class="flex gap-8">
+                        <div class="">
+                            <h2>8.18K <span class="text-color-text">| 1.3%</span></h2>
+                            <h4 class="text-gray-500">INCOME</h4>
+                        </div>
+                        <div class="">
+                            <h2>1.11K <span class="text-color-text">| 4.1%</span></h2>
+                            <h4 class="text-gray-500">EXPENSE</h4>
+                        </div>
+                        <div class="">
+                            <h2>3.66K <span class="text-red-500">| 7.5%</span></h2>
+                            <h4 class="text-gray-500">REVENUE</h4>
+                        </div>
+                    </div>
+                </div>
+                <form class="relative mr-8 ml-6">
+                    <div class="absolute bg-white px-6 pt-10 pb-3 shadow-xl ring-1 ring-gray-900/5 rounded-lg w-full">
+                        <div class="flex">
+                            <div class="">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp2Pr0vsl0z_NIp7rhvQdZY5ZVzT0NRprc3Q&usqp=CAU"
+                                    alt="No image" class="w-48 h-52 rounded-lg mr-10">
+                            </div>
+                            <div class="ml-5 max-w-xl">
+                                <div class="flex">
+                                    <h1 class="text-2xl mr-4">Allie Grater</h1> <span><svg
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <h3>alliegrater@luno.com</h3>
+                                <h5 class="text-gray-500 mt-4">It is a long established fact that a reader will
+                                    be
+                                    distracted by
+                                    the readable
+                                    content of a page when looking at its layout Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Aut cupiditate in voluptate, corrupti itaque vitae cumque.
+                                </h5>
+                                <ul class="flex gap-4">
+                                    <li
+                                        class="shadow-xl ring-gray-900/5 rounded-lg w-from h-auto bg-slate-50 text-center p-3">
+                                        <h3 class="text-gray-500">Total Earnings</h3>
+                                        <h1 class="text-xl">$10,705</h1>
+                                    </li>
+                                    <li
+                                        class="shadow-xl ring-gray-900/5 rounded-lg w-from h-auto bg-slate-50 text-center p-3">
+                                        <h3 class="text-gray-500">Awards</h3>
+                                        <h1 class="text-xl">45</h1>
+                                    </li>
+                                    <li
+                                        class="shadow-xl ring-gray-900/5 rounded-lg w-from h-auto bg-slate-50 text-center p-3">
+                                        <h3 class="text-gray-500">Experience</h3>
+                                        <h1 class="text-xl">8+</h1>
+                                    </li>
+                                    <li
+                                        class="border-dotted border-2 border-indigo-600 shadow-xl ring-gray-900/5 rounded-lg w-from h-auto bg-slate-50 text-center p-3">
+                                        <h3 class="text-gray-500">City</h3>
+                                        <h1 class="text-xl">New york</h1>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                        <br>
+                        <div class="w-full h-px bg-gray-500"></div>
+                        <ul class="flex gap-8 mt-4 ml-4">
+                            <li
+                                class="cursor-pointer py-1 hover:text-green-500 relative after:absolute after:bottom-0 after:left-0 after:bg-green-500 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:eses-in-out after:duration-300">
+                                <span>Overview</span>
+                            </li>
+                            <li
+                                class="flex cursor-pointer py-1 hover:text-green-500 relative after:absolute after:bottom-0 after:left-0 after:bg-green-500 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:eses-in-out after:duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                                </svg>
+                                <span class="ml-1">Groups</span>
+                            </li>
+                            <li
+                                class="flex cursor-pointer py-1 hover:text-green-500 relative after:absolute after:bottom-0 after:left-0 after:bg-green-500 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:eses-in-out after:duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
+                                </svg>
+                                <span class="ml-1">Project</span>
+
+                            </li>
+                            <li
+                                class="flex cursor-pointer py-1 hover:text-green-500 relative after:absolute after:bottom-0 after:left-0 after:bg-green-500 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:eses-in-out after:duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                                </svg>
+                                <span class="ml-1">Campaigns</span>
+
+                            </li>
+                            <li
+                                class="flex cursor-pointer py-1 hover:text-green-500 relative after:absolute after:bottom-0 after:left-0 after:bg-green-500 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:eses-in-out after:duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                                </svg>
+                                <span class="ml-1">Activity</span>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
             </div>
-            <div
-              class="flex items-center px-3 py-1 bg-purple-200 hover:bg-slate-600 rounded-md"
-            >
-              <i class="w-1/5"
-                ><img
-                  src="https://hangkhongmy.vn/wp-content/uploads/2018/08/bi-an-trong-la-co-nuoc-my-1.png"
-                  alt="my"
-              /></i>
-              <p class="ml-2">US English</p>
-            </div>
-            <div
-              class="flex items-center px-3 py-1 bg-purple-200 hover:bg-slate-600 rounded-md"
-            >
-              <i class="w-1/5"
-                ><img
-                  src="https://th.bing.com/th/id/OIP.WiiE2MA4RS46HmLgfsbXdwAAAA?pid=ImgDet&rs=1"
-                  alt="duc"
-              /></i>
-              <p class="ml-2">Germany</p>
-            </div>
-            <div
-              class="flex items-center px-3 py-1 bg-purple-200 hover:bg-slate-600 rounded-md"
-            >
-              <i class="w-1/5"
-                ><img
-                  src="https://th.bing.com/th/id/OIP.WiiE2MA4RS46HmLgfsbXdwAAAA?pid=ImgDet&rs=1"
-                  alt="duc"
-              /></i>
-              <p class="ml-2">Hindi</p>
-            </div>
-            <div
-              class="flex items-center px-3 py-1 bg-purple-200 hover:bg-slate-600 rounded-md"
-            >
-              <i class="w-1/5"
-                ><img
-                  src="https://th.bing.com/th/id/OIP.WiiE2MA4RS46HmLgfsbXdwAAAA?pid=ImgDet&rs=1"
-                  alt="duc"
-              /></i>
-              <p class="ml-2">Saudi Arabia</p>
-            </div>
-          </div>
-        </i>
-        <i
-          class="icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z"
-            />
-          </svg>
-        </i>
-        <i
-          onclick="onNight(this)"
-          class="night icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
-            />
-          </svg>
-        </i>
-        <i
-          class="icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md w-14"
-          ><img
-            class="rounded-full"
-            src="https://i.pinimg.com/originals/26/ee/73/26ee73636f3429e3df522ae219c064fd.png"
-            alt="avatar"
-        /></i>
-        <i
-          class="icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z"
-            />
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-            />
-          </svg>
-        </i>
-      </div>
+
+            <!-- end profile -->
+
+            <!-- Profile Overview tuan anh -->
+        </div>
     </div>
 
-    <div id="profile" style="height: 100vh; margin-top: 100px"></div>
+</body>
+<script src="../src/main.js"></script>
 
-    <!-- profile truong -->
-
-    <!-- Profile Overview tuan anh -->
-
-    <script src="../src/main.js"></script>
-    <script></script>
-  </body>
 </html>
