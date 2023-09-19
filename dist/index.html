@@ -13,7 +13,7 @@
 </head>
 
 
-<body id="body" class="">
+<body class="body">
     <!-- ae code vào file index và input.css nha  -->
 
         <!-- menu tuong-->
@@ -514,10 +514,10 @@
         </div>
     </nav>
         <!-- het gimenu  -->
-    <div class="flex text-base">
-        <div class="w-1/6">menu</div>
-        <div class="w-5/6">
-            <!-- nav linh -->
+        <div class="flex text-base">
+          <div class="w-1/6">menu</div>
+          <div class="w-5/6">
+          <!-- nav linh -->
             <div class="navbar__top flex items-center justify-between fixed top-0 right-0 left-72 bg-slate-100 h-14">
                 <div class="basis-5/6 flex items-center w-28">
                     <i class="p-2 mx-2 icon__nav cursor-pointer">
@@ -543,10 +543,6 @@
                                 d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
                         </svg>
                     </i>
-
-
-
-    <!-- nav linh -->
                     <i class="change__language relative icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md"
                         onmouseover="listLanguage()">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -575,24 +571,50 @@
                             </div>
                             <div class="flex items-center px-3 py-1 bg-purple-200 hover:bg-slate-600 rounded-md">
                                 <i class="w-1/5"><img
-                                        src="https://th.bing.com/th/id/OIP.WiiE2MA4RS46HmLgfsbXdwAAAA?pid=ImgDet&rs=1"
-                                        alt="duc" /></i>
+                                        src="https://th.bing.com/th/id/OIP.b8apmr7MEf5KEcBEDBipIAHaFP?pid=ImgDet&rs=1"
+                                        alt="Hindi" /></i>
                                 <p class="ml-2">Hindi</p>
                             </div>
                             <div class="flex items-center px-3 py-1 bg-purple-200 hover:bg-slate-600 rounded-md">
                                 <i class="w-1/5"><img
-                                        src="https://th.bing.com/th/id/OIP.WiiE2MA4RS46HmLgfsbXdwAAAA?pid=ImgDet&rs=1"
-                                        alt="duc" /></i>
+                                        src="https://www.welt-flaggen.de/data/flags/w1600/ae.png"
+                                        alt="Saudi Arabia" /></i>
                                 <p class="ml-2">Saudi Arabia</p>
                             </div>
                         </div>
                     </i>
-                    <i class="icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md"><svg
+                    <i class="icon__nav relative hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md" onmouseover="listDashboards()"><svg
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z" />
                         </svg>
+                        <div class="modal__dashboard absolute top-12 right-0 w-60 border-dashed border-2 border-gray-400 rounded-md bg-white p-2 hidden">
+                          <div class="flex">
+                            <button class="w-28 hover:bg-slate-300 rounded-lg px-3 py-1 border border-dashed">
+                              <i class="fa-solid fa-gauge text-3xl"></i>
+                              <h2>Dashboard</h2>
+                              <p>view all</p>
+                            </button>
+                            <button class="w-28 hover:bg-slate-300 rounded-lg px-3 py-1 border border-dashed">
+                              <i class="fa-regular fa-square text-3xl"></i>
+                              <h2>Applications</h2>
+                              <p>view all</p>
+                            </button>
+                          </div>
+                          <div class="flex">
+                            <button class="w-28 hover:bg-slate-300 rounded-lg px-3 py-1 border border-dashed">
+                              <i class="fa-solid fa-book text-3xl"></i>
+                              <h2>Pages</h2>
+                              <p>view all</p>
+                            </button>
+                            <button class="w-28 hover:bg-slate-300 rounded-lg px-3 py-1 border border-dashed">
+                              <i class="fa-solid fa-table-columns text-3xl"></i>
+                              <h2>Layouts</h2>
+                              <p>view all</p>
+                            </button>
+                          </div>
+                        </div>
                     </i>
                     <i onclick="onNight(this)"
                         class="night icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md"><svg
@@ -602,10 +624,49 @@
                                 d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
                         </svg>
                     </i>
-                    <i class="icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md w-14"><img
+                    <i class="icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md w-14" onmouseover="listSettings()"><img
                             class="rounded-full"
                             src="https://i.pinimg.com/originals/26/ee/73/26ee73636f3429e3df522ae219c064fd.png"
-                            alt="avatar" /></i>
+                            alt="avatar" />
+                        <div class="modal__settings absolute top-14 right-0 w-60 bg-white z-50 shadow-md rounded-xl hidden">
+                          <div class="flex justify-center py-4 border-b border-solid border-gray-500 items-center">
+                            <img class="w-9 h-9 rounded-md" src="https://i.pinimg.com/originals/26/ee/73/26ee73636f3429e3df522ae219c064fd.png" alt="">
+                            <div class="flex flex-col">
+                              <h1 class="ml-2">Allie Grater</h1>
+                              <p class="ml-2 text-sm">alliegrater@gamil.com</p>
+                            </div>
+                          </div>
+                          <div class="flex flex-col">
+                            <div class="flex items-center py-2 px-4 hover:bg-slate-300">
+                              <i class="fa-solid fa-house px-4 w-12"></i>
+                              <h2 class="ml-2">My Profiles</h2>
+                            </div>
+                            <div class="flex items-center py-2 px-4 hover:bg-slate-300">
+                              <i class="fa-solid fa-gauge px-4 w-12"></i>
+                              <h2 class="ml-2">Settings</h2>
+                            </div>
+                            <div class="flex items-center py-2 px-4 hover:bg-slate-300">
+                              <i class="fa-solid fa-book px-4 w-12"></i>
+                              <h2 class="ml-2">Billing</h2>
+                            </div>
+                            <div class="flex items-center py-2 px-4 hover:bg-slate-300">
+                              <i class="fa-regular fa-credit-card px-4 w-12"></i>
+                              <h2 class="ml-2">Manage Team</h2>
+                            </div>
+                            <div class="flex items-center py-2 px-4 hover:bg-slate-300">
+                              <i class="fa-solid fa-shield px-4 w-12"></i>
+                              <h2 class="ml-2">My Events</h2>
+                            </div>
+                            <div class="flex items-center py-2 px-4 hover:bg-slate-300">
+                              <i class="fa-solid fa-sd-card px-4 w-12"></i>
+                              <h2 class="ml-2">Support Ticket</h2>
+                            </div>
+                          </div>
+                          <div class="flex bg-teal-500 items-center justify-center rounded-b-xl h-10">
+                            <h1 class="text-white">SIGN OUT</h1>
+                          </div>
+                        </div>
+                    </i>
                     <i class="icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md"><svg
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
@@ -619,7 +680,7 @@
 
 
             <!-- profile truong -->
-            <div class="profile">
+            <div class="profile mt-32">
                 <div class="flex gap-4 text-color-text mb-6 ml-6">
                     <h3>Home</h3> <span> / </span>
                     <h3>Crafted pages</h3> <span> / </span>
@@ -645,8 +706,8 @@
                         </div>
                     </div>
                 </div>
-                <form class="relative mr-8 ml-6">
-                    <div class="absolute bg-white px-6 pt-10 pb-3 shadow-xl ring-1 ring-gray-900/5 rounded-lg w-full">
+                <form class=" mr-8 ml-6">
+                    <div class=" bg-white px-6 pt-10 pb-3 shadow-xl ring-1 ring-gray-900/5 rounded-lg w-full">
                         <div class="flex">
                             <div class="">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp2Pr0vsl0z_NIp7rhvQdZY5ZVzT0NRprc3Q&usqp=CAU"
@@ -756,9 +817,3 @@
 <script src="../src/main.js"></script>
 
 </html>
-<!-- <script>
-    function myFunction() {
-  const list = document.getElementById("remove_hidden").classList;
-  list.remove("hidden");
-}
-</script> -->
