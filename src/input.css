@@ -1,3 +1,180 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Profile overview styles */
+
+  .profile-overview {
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .row {
+    margin-bottom: 20px;
+  }
+
+  .col-md-12 {
+    width: 30%;
+    float: left;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .profile-info {
+    text-align: left;
+  }
+
+  .profile-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .profile-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .profile-bio {
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.5;
+  }
+
+  .profile-skills {
+    margin-top: 20px;
+  }
+
+  .profile-skills-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .profile-skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .profile-skills-list li {
+    margin-bottom: 10px;
+  }
+
+  .profile-experience {
+    margin-top: 20px;
+  }
+
+  .profile-experience-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .profile-experience-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .profile-experience-list li {
+    margin-bottom: 10px;
+  }
+
+  input[name="post"] {
+    width: 450px;
+    height: 100px;
+    padding-left: 5px;
+    padding-bottom: 50px;
+border-width: 1px;
+  border-style: solid;
+  border-color: rgb(59, 64, 127);
+}
+
+ button {
+    background-color: cadetblue;
+    margin-top: 20px;
+    margin-left: 350px;
+  }
+
+  .post {
+    background-color: #ffffff;
+    padding: 20px;
+  }
+
+  .post h2 {
+    font-size: 24px;
+    color: #000000;
+  }
+
+  .post p {
+    font-size: 16px;
+    color: #000000;
+  }
+
+  .post img {
+    width: 100%;
+  }
+
+  .post ul {
+    margin-bottom: 20px;
+  }
+
+  .post li {
+    list-style-type: none;
+    font-size: 16px;
+    color: #000000;
+  }
+
+  .post a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .comment {
+    width: 450px;
+    border: 1px dotted black;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-right: 20px;
+}
+
+.active-status{
+    opacity: 0.5;
+    font-size: 16px;
+}
+.content{
+    opacity: 0.5;
+    font-size: 16px;
+}
+
+.col-md-12 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+div[id="cate"]{
+margin-left: 20px;
+text-align: right;
+}
+
+.cate ul li {
+    color: aqua;
+    margin-top: 10px;
+    font-size: 16px;
+}
