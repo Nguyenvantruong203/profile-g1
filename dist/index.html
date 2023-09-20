@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +9,7 @@
     <link href="./output.css" rel="stylesheet">
     <link href="../src/input.css" rel="stylesheet">
 
-    <title>Document</title>
+    <title>Profile</title>
 
 </head>
 
@@ -16,41 +17,44 @@
 <body class="body">
     <!-- ae code vào file index và input.css nha  -->
 
-        <!-- menu tuong-->
+    <!-- menu tuong-->
     <nav class="h-screen p-3 bg-[#F4F7F6] overflow-y-auto fixed">
         <div class="p-4 flex justify-between">
             <h1 class="text-2xl">LUNO Admin</h1>
-            <div id="icon-quick" >
-                <i class="fa-solid fa-circle-plus text-2xl cursor-pointer focus:cursor-auto hover:text-blue-500 relative"></i>
+            <div id="icon-quick">
+                <i
+                    class="fa-solid fa-circle-plus text-2xl cursor-pointer focus:cursor-auto hover:text-blue-500 relative"></i>
             </div>
-    
+
             <div id="quick-actions" class="p-4 bg-white rounded-xl hidden absolute mt-7 ml-20">
                 <h3 class="font-bold">Quick Actions</h3>
-                <hr style="margin: 8px;">           
-    
+                <hr style="margin: 8px;">
+
                 <h3>Landing page</h3>
                 <h3>Inventory</h3>
                 <h3>eCommerce</h3>
                 <h3>HRMS</h3>
-                <hr style="margin: 8px;">           
-    
+                <hr style="margin: 8px;">
+
                 <h3>Invoices List</h3>
                 <h3>Create Invoices</h3>
             </div>
         </div>
-    
+
         <div id="" class="p-4 flex justify-between">
             <div>
-                <select name="my-select" class="w-44 h-9 bg-white  rounded-full flex items-center border border-[rgb(233,230,225)] justify-between hover:border-blue-400"">
-                    <option value="1">Select Project</option>
+                <select name="my-select"
+                    class="w-44 h-9 bg-white  rounded-full flex items-center border border-[rgb(233,230,225)] justify-between hover:border-blue-400"">
+                    <option value=" 1">Select Project</option>
                     <option value="2">Luno University</option>
                     <option value="3">Book Manager</option>
                     <option value="3">Luno Sass App</option>
-                  </select>
+                </select>
             </div>
-            <i id="icon-open-setup" class="fa-solid fa-circle-plus text-4xl cursor-pointer focus:cursor-auto text-[#2794EB] hover:text-blue-500"></i>     
+            <i id="icon-open-setup"
+                class="fa-solid fa-circle-plus text-4xl cursor-pointer focus:cursor-auto text-[#2794EB] hover:text-blue-500"></i>
         </div>
-        
+
         <div class="w-56 h-max rounded-lg bg-[#F4F7F6] p-3 border-2 border-dotted border-[rgb(233,230,225)] mx-4 mb-4 ">
             <h3 class="text-xs">MAIN</h3>
             <p class="text-xs text-gray-400">Unique dashboard designs</p>
@@ -60,34 +64,35 @@
                     <i class="fa-solid fa-house p-1"></i>
                     <h3>My Dashboard</h3>
                 </div>
-    
+
                 <i id="icon-my-dashboard" class="fa-solid fa-chevron-right text-xs p-1 mr-2 "></i>
             </div>
-            
+
             <div id="option-my-dashboard" class="flex hidden ">
                 <div class="w-px h-28 mx-4 mt-3 bg-[#00AC9A]">
-    
+
                 </div>
                 <div class="pt-4 ">
                     <h4 class="p-1 hover:text-[#00AC9A] ">Analysis</h4>
                     <h4 class="p-1 hover:text-[#00AC9A]">My wallet</h4>
                     <h4 class="p-1 hover:text-[#00AC9A]">IOT</h4>
                 </div>
-                
+
             </div>
-            <hr style="margin: 10px;">           
-    
-            <div id="unique-dashboard" class="flex justify-between cursor-pointer focus:cursor-auto hover:text-[#00AC9A]">
+            <hr style="margin: 10px;">
+
+            <div id="unique-dashboard"
+                class="flex justify-between cursor-pointer focus:cursor-auto hover:text-[#00AC9A]">
                 <div class="flex ">
                     <i class="fa-solid fa-gauge p-1"></i>
                     <h3>Unique Dashboard</h3>
-                </div>     
+                </div>
                 <i id="icon-unique" class="fa-solid fa-chevron-right text-xs p-1 flex justify-end mr-2"></i>
             </div>
-    
+
             <div id="option-unique-dashboard" class="flex hidden ">
                 <div class="w-px mx-4 mt-3 bg-[#00AC9A]">
-    
+
                 </div>
                 <div class="pt-4 ">
                     <h4 class="p-1 hover:text-[#00AC9A]">CRM Management</h4>
@@ -104,10 +109,10 @@
                     <h4 class="p-1 hover:text-[#00AC9A]">Restaurant & Cafe</h4>
                     <h4 class="p-1 hover:text-[#00AC9A]">Server Analysis</h4>
                     <h4 class="p-1 hover:text-[#00AC9A]">School/University</h4>
-                </div>          
+                </div>
             </div>
-            <hr style="margin: 10px;">           
-    
+            <hr style="margin: 10px;">
+
             <div id="applications" class="flex justify-between cursor-pointer focus:cursor-auto hover:text-[#00AC9A]">
                 <div class="flex">
                     <i class="fa-regular fa-square p-1"></i>
@@ -115,10 +120,10 @@
                 </div>
                 <i id="icon-applications" class="fa-solid fa-chevron-right text-xs p-1 mr-2"></i>
             </div>
-    
+
             <div id="option-applications" class="flex hidden ">
                 <div class="w-px mx-4 mt-3 bg-[#00AC9A]">
-    
+
                 </div>
                 <div class="pt-4 ">
                     <h4 class="p-1 hover:text-[#00AC9A]">Calendar</h4>
@@ -135,10 +140,10 @@
                     <h4 class="p-1 hover:text-[#00AC9A]">Kanban Board</h4>
                     <h4 class="p-1 hover:text-[#00AC9A]">Blog Details</h4>
                     <h4 class="p-1 hover:text-[#00AC9A]">Blof Preview</h4>
-                </div>          
-            </div> 
-            <hr style="margin: 10px;">           
-    
+                </div>
+            </div>
+            <hr style="margin: 10px;">
+
             <div id="crafted" class="flex justify-between cursor-pointer focus:cursor-auto hover:text-[#00AC9A]">
                 <div class="flex">
                     <i class="fa-solid fa-book p-1"></i>
@@ -146,10 +151,10 @@
                 </div>
                 <i id="icon-crafted" class="fa-solid fa-chevron-right text-xs p-1 mr-2"></i>
             </div>
-    
+
             <div id="option-crafted" class="flex hidden ">
                 <div class="w-px mx-4 mt-3 bg-[#00AC9A]">
-    
+
                 </div>
                 <div class="pt-4 ">
                     <h4 class="p-1 hover:text-[#00AC9A]">My Profile</h4>
@@ -162,10 +167,10 @@
                     <h4 class="p-1 hover:text-[#00AC9A]">FAQs</h4>
                     <h4 class="p-1 hover:text-[#00AC9A]">Search Pages</h4>
                     <h4 class="p-1 hover:text-[#00AC9A]">Footers</h4>
-                </div>          
-            </div> 
-            <hr style="margin: 10px;">  
-    
+                </div>
+            </div>
+            <hr style="margin: 10px;">
+
             <div id="account" class="flex justify-between cursor-pointer focus:cursor-auto hover:text-[#00AC9A]">
                 <div class="flex">
                     <i class="fa-regular fa-credit-card p-1"></i>
@@ -173,20 +178,20 @@
                 </div>
                 <i id="icon-account" class="fa-solid fa-chevron-right text-xs p-1 mr-2"></i>
             </div>
-    
+
             <div id="option-account" class="flex hidden ">
                 <div class="w-px mx-4 mt-3 bg-[#00AC9A]">
-    
+
                 </div>
                 <div class="pt-4 ">
                     <h4 class="p-1 hover:text-[#00AC9A]">Setting</h4>
                     <h4 class="p-1 hover:text-[#00AC9A]">Invoice List</h4>
                     <h4 class="p-1 hover:text-[#00AC9A]">Create Invoices</h4>
                     <h4 class="p-1 hover:text-[#00AC9A]">Billing</h4>
-                </div> 
-            </div> 
-            <hr style="margin: 10px;">  
-    
+                </div>
+            </div>
+            <hr style="margin: 10px;">
+
             <div id="authentication" class="flex justify-between cursor-pointer focus:cursor-auto hover:text-[#00AC9A]">
                 <div class="flex">
                     <i class="fa-solid fa-shield p-1"></i>
@@ -194,10 +199,10 @@
                 </div>
                 <i id="icon-authentication" class="fa-solid fa-chevron-right text-xs p-1 mr-2"></i>
             </div>
-    
+
             <div id="option-authentication" class="flex hidden ">
                 <div class="w-px mx-4 mt-3 bg-[#00AC9A]">
-    
+
                 </div>
                 <div class="pt-4 ">
                     <h4 class="p-1 hover:text-[#00AC9A]">404</h4>
@@ -209,10 +214,10 @@
                     <h4 class="p-1 hover:text-[#00AC9A]">2-Step Authentication</h4>
                     <h4 class="p-1 hover:text-[#00AC9A]">Lockscreen</h4>
                     <h4 class="p-1 hover:text-[#00AC9A]">Maintenance</h4>
-                </div> 
-            </div> 
-            <hr style="margin: 10px;">  
-    
+                </div>
+            </div>
+            <hr style="margin: 10px;">
+
             <div id="level-0" class="flex justify-between cursor-pointer focus:cursor-auto hover:text-[#00AC9A]">
                 <div class="flex">
                     <i class="fa-solid fa-bars p-1"></i>
@@ -220,117 +225,121 @@
                 </div>
                 <i id="icon-level-0" class="fa-solid fa-chevron-right text-xs p-1 mr-2"></i>
             </div>
-        
-        <div id="option-level-0" class="flex hidden ">
-            <div class="w-px mx-4 mt-3 bg-[#00AC9A]">
-    
-            </div>
-            <div class="pt-4 ">
-                <div id="click-level-1" class="flex">
-                    <h4 class="p-1 hover:text-[#00AC9A] cursor-pointer focus:cursor-auto">Menu Level 1</h4>
-                    <i id="icon-level-1" class="fa-solid fa-chevron-right text-xs p-2"></i>
-                    
+
+            <div id="option-level-0" class="flex hidden ">
+                <div class="w-px mx-4 mt-3 bg-[#00AC9A]">
+
                 </div>
-    
+                <div class="pt-4 ">
+                    <div id="click-level-1" class="flex">
+                        <h4 class="p-1 hover:text-[#00AC9A] cursor-pointer focus:cursor-auto">Menu Level 1</h4>
+                        <i id="icon-level-1" class="fa-solid fa-chevron-right text-xs p-2"></i>
+
+                    </div>
+
                     <div id="option-level-1" class="flex hidden ">
                         <div class="w-px mx-2 mt-3 bg-[#00AC9A]">
-            
+
                         </div>
-    
+
                         <div class="py-4 ">
                             <div id="click-level-2" class="flex">
                                 <h4 class="p-1 hover:text-[#00AC9A] cursor-pointer focus:cursor-auto">Menu Level 2</h4>
                                 <i id="icon-level-2" class="fa-solid fa-chevron-right text-xs p-2"></i>
-    
+
                             </div>
-    
+
                             <div id="option-level-2" class="flex hidden ">
                                 <div class="w-px mx-4 mt-3 bg-[#00AC9A]">
-                    
+
                                 </div>
                                 <div class="py-2 ">
                                     <h4 class="p-1 hover:text-[#00AC9A]">Menu Level 3</h4>
-                                </div> 
-                            </div> 
-    
+                                </div>
+                            </div>
+
                             <h4 class="p-1 hover:text-[#00AC9A]">Menu Level 2</h4>
-                        </div> 
-                    </div> 
-    
+                        </div>
+                    </div>
+
                     <h4 class="p-1 hover:text-[#00AC9A]">Menu Level 1</h4>
-                </div> 
-            </div> 
+                </div>
+            </div>
         </div>
-    
+
         <div class="w-56 h-max p-3 rounded-lg bg-[#F4F7F6] border-2 border-dotted border-[rgb(233,230,225)] mx-4 mb-4">
             <h3 class="text-xs text-gray-500">RESOURCES</h3>
             <p class="text-xs text-gray-400">you need to know about LUNO</p>
-            <hr style="margin: 10px;">  
-    
+            <hr style="margin: 10px;">
+
             <div class="flex cursor-pointer focus:cursor-auto hover:text-[#00AC9A]">
                 <i class="fa-solid fa-table-columns p-1"></i>
                 <h3>Layouts</h3>
             </div>
-            <hr style="margin: 10px;">   
-    
+            <hr style="margin: 10px;">
+
             <div class="flex cursor-pointer focus:cursor-auto hover:text-[#00AC9A]">
                 <i class="fa-regular fa-rectangle-list p-1"></i>
                 <h3>Modals Popups</h3>
             </div>
-            <hr style="margin: 10px;">   
-    
+            <hr style="margin: 10px;">
+
             <div class="flex cursor-pointer focus:cursor-auto hover:text-[#00AC9A]">
                 <i class="fa-solid fa-sd-card p-1"></i>
                 <h3>Widget's</h3>
             </div>
-            <hr style="margin: 10px;">  
-    
+            <hr style="margin: 10px;">
+
             <div class="flex cursor-pointer focus:cursor-auto hover:text-[#00AC9A]">
                 <i class="fa-regular fa-folder-open p-1"></i>
                 <h3>Documentation</h3>
             </div>
-            <hr style="margin: 10px;">  
-    
+            <hr style="margin: 10px;">
+
             <div class="flex cursor-pointer focus:cursor-auto hover:text-[#00AC9A]">
                 <i class="fa-solid fa-square-pen p-1"></i>
                 <h3>Changelog</h3>
                 <p class="h-min w-min bg-blue-400 rounded-md px-1 text-sm text-white mt-1 ml-12">v1.2.6</p>
-            </div>  
+            </div>
         </div>
-    
-        <div class="w-56 h-max p-2 rounded-lg bg-[#F4F7F6]  border-2 border-dotted border-[rgb(233,230,225)] mx-4 flex justify-evenly items-end ">
-            <i id="open-schedule" class="fa-solid fa-calendar-week cursor-pointer focus:cursor-auto hover:text-[#00AC9A] text-xl"></i>
-            <i id="icon-open-my-notes" class="fa-regular fa-file cursor-pointer focus:cursor-auto hover:text-[#00AC9A] text-xl"></i>
+
+        <div
+            class="w-56 h-max p-2 rounded-lg bg-[#F4F7F6]  border-2 border-dotted border-[rgb(233,230,225)] mx-4 flex justify-evenly items-end ">
+            <i id="open-schedule"
+                class="fa-solid fa-calendar-week cursor-pointer focus:cursor-auto hover:text-[#00AC9A] text-xl"></i>
+            <i id="icon-open-my-notes"
+                class="fa-regular fa-file cursor-pointer focus:cursor-auto hover:text-[#00AC9A] text-xl"></i>
             <i class="fa-solid fa-comment-sms cursor-pointer focus:cursor-auto hover:text-[#00AC9A] text-xl"></i>
             <i class="fa-solid fa-power-off cursor-pointer focus:cursor-auto hover:text-[#00AC9A] text-xl"></i>
         </div>
     </nav>
-    
+
     <nav id="setup-project" class="h-screen w-1/4 bg-white overflow-y-auto fixed hidden z-50">
         <div class="p-4 flex justify-between  h-16 w-full bg-white top-0 sticky ">
             <h2 class=" text-xl">Setup new project</h2>
-            <i id="icon-close-setup" class="fa-solid fa-xmark text-3xl cursor-pointer focus:cursor-auto hover:text-gray-400"></i>
+            <i id="icon-close-setup"
+                class="fa-solid fa-xmark text-3xl cursor-pointer focus:cursor-auto hover:text-gray-400"></i>
         </div>
-        
+
         <div class="flex justify-evenly py-4">
             <h3>1. Project</h3>
             <h3>2. Team</h3>
             <h3>3. File</h3>
             <h3>4. Completed</h3>
         </div>
-    
+
         <div class="h-max rounded-lg bg-white p-3 border-2 border-dotted border-[rgb(233,230,225)] mx-4 mb-4">
             <h3 class="pl-3">Project Type</h3>
             <p class="text-sm text-gray-400 pb-3 pl-3">If you need more infor, please check out FAQ Page</p>
-            
+
             <div class="h-max rounded-lg flex bg-white p-3 border-2 border-dotted border-[rgb(233,230,225)] mx-4 my-2">
                 <i class="fa-solid fa-user p-2 text-3xl"></i>
                 <div class="pl-">
                     <h3>Personal Project</h3>
                     <p class="text-gray-400">For smaller business, with simple salaries and pay schedules.</p>
                 </div>
-            </div >
-                
+            </div>
+
             <div class="h-max rounded-lg flex bg-white p-3 border-2 border-dotted border-[rgb(233,230,225)] mx-4 my-2">
                 <i class="fa-solid fa-users p-2 text-3xl"></i>
                 <div class="pl-3">
@@ -339,10 +348,11 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="h-max rounded-lg bg-white p-3 border-2 border-dotted border-[rgb(233,230,225)] mx-4 my-2">
             <h3 class="pl-3">Project Details</h3>
-            <p class="text-gray-400 text-sm pl-3">It is a long established fact that a reader will be distracted by Luno.</p>
+            <p class="text-gray-400 text-sm pl-3">It is a long established fact that a reader will be distracted by
+                Luno.</p>
             <select class="h-14 w-11/12 mx-3 mt-3 mb-1 p-3 border-2 rounded border-[rgb(233,230,225)]">
                 <p class="text-xs text-gray-400">Choose a Customer</p>
                 <option value="1">Open this select menu</option>
@@ -350,9 +360,12 @@
                 <option value="3">LUNO</option>
                 <option value="4">Luno</option>
             </select>
-            <input type="text" placeholder="Project name *" class="h-14 w-11/12 mx-3 my-1 p-3 rounded border-2  border-[rgb(233,230,225)]">
-            <input type="text" placeholder="Add project details" class="h-24 w-11/12 mx-3 my-1 p-3 rounded border-2  border-[rgb(233,230,225)]">
-            <input type="datetime-local" name="" id="" class="h-14 w-11/12 mx-3 my-1 p-3 rounded border-2  border-[rgb(233,230,225)]">
+            <input type="text" placeholder="Project name *"
+                class="h-14 w-11/12 mx-3 my-1 p-3 rounded border-2  border-[rgb(233,230,225)]">
+            <input type="text" placeholder="Add project details"
+                class="h-24 w-11/12 mx-3 my-1 p-3 rounded border-2  border-[rgb(233,230,225)]">
+            <input type="datetime-local" name="" id=""
+                class="h-14 w-11/12 mx-3 my-1 p-3 rounded border-2  border-[rgb(233,230,225)]">
             <div class="flex pb-4">
                 <h3 class="text-gray-400 px-3 mr-20">Allow Notifications*</h3>
                 <input type="checkbox" name="" id="" class="mx-2">Phone
@@ -360,53 +373,54 @@
             </div>
         </div>
         <div class="h-12 w-max mx-44 rounded-md p-2 bg-[#00AC9A] m-3">
-            <input type="submit" value="" >ADD PEOPLE
+            <input type="submit" value="">ADD PEOPLE
         </div>
     </nav>
-    
+
     <nav id="schedule" class="h-screen w-1/4 overflow-y-auto fixed bg-white hidden z-50">
         <div class="p-4 flex justify-between  h-16 w-full bg-[#00AC9A] top-0 sticky ">
             <h2 class=" text-xl text-white">Schedule</h2>
-            <i id="icon-close-schedule" class="fa-solid fa-square-xmark text-white text-3xl cursor-pointer focus:cursor-auto hover:text-gray-400"></i>
+            <i id="icon-close-schedule"
+                class="fa-solid fa-square-xmark text-white text-3xl cursor-pointer focus:cursor-auto hover:text-gray-400"></i>
         </div>
         <div class="flex">
             <div class="w-px ml-7 mt-3 bg-gray-400">
-                
+
             </div>
             <div>
                 <div class="flex pt-7 px-2 pb-3">
-                    
+
                     <i class="fa-solid fa-square-phone text-2xl mx-5"></i>
                     <div>
                         <p>Call Danny at Colby's</p>
                         <p class="text-sm text-gray-400">Today - 11:32am</p>
                     </div>
                 </div>
-            
+
                 <div class="flex pl-2 p-3">
                     <i class="fa-solid fa-circle-user text-2xl mx-5"></i>
-                    <div >
+                    <div>
                         <p>Meeting with Alice</p>
                         <p class="text-sm text-gray-400">Today - 12:50pm</p>
                     </div>
                 </div>
-            
+
                 <div class="flex pl-2 p-3">
                     <i class="fa-solid fa-comment-sms text-2xl mx-5"></i>
-                    <div >
+                    <div>
                         <p>Answer Annie's message</p>
                         <p class="text-sm text-gray-400">Today - 01:40pm</p>
                     </div>
                 </div>
-            
+
                 <div class="flex pl-2 p-3">
                     <i class="fa-solid fa-square-phone text-2xl mx-5"></i>
                     <div>
                         <p>Send new campaign</p>
                         <p class="text-sm text-gray-400">Today - 02:40pm</p>
                     </div>
-                </div> 
-            
+                </div>
+
                 <div class="flex pl-2 p-3">
                     <i class="fa-solid fa-face-smile text-2xl mx-5"></i>
                     <div>
@@ -414,7 +428,7 @@
                         <p class="text-sm text-gray-400">Today - 03:15pm</p>
                     </div>
                 </div>
-            
+
                 <div class="flex pl-2 p-3">
                     <i class="fa-solid fa-square-phone text-2xl mx-5"></i>
                     <div>
@@ -422,7 +436,7 @@
                         <p class="text-sm text-gray-400">Today - 05:40pm</p>
                     </div>
                 </div>
-            
+
                 <div class="flex pl-2 p-3">
                     <i class="fa-solid fa-leaf text-2xl mx-5"></i>
                     <div>
@@ -431,18 +445,19 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </nav>
     <nav id="my-notes" class="h-screen w-1/4 overflow-y-auto fixed bg-white hidden z-50">
         <div class="p-4 flex justify-between bg-white h-16 w-full top-0 sticky ">
             <div class="flex">
-            <h2 class=" text-xl mr-5">My Notes</h2>
-            <h2 class="w-9 h-max rounded-lg pl-2 mt-1    bg-red-600  text-white  "> 14</h2>
+                <h2 class=" text-xl mr-5">My Notes</h2>
+                <h2 class="w-9 h-max rounded-lg pl-2 mt-1    bg-red-600  text-white  "> 14</h2>
             </div>
-            <i id="icon-close-my-notes" class="fa-solid fa-xmark  text-3xl cursor-pointer focus:cursor-auto hover:text-gray-400"></i>
-        </div >
-            
+            <i id="icon-close-my-notes"
+                class="fa-solid fa-xmark  text-3xl cursor-pointer focus:cursor-auto hover:text-gray-400"></i>
+        </div>
+
         <div class="flex justify-evenly h-max w-full py-5 bg-[#f4f7f6] top-16 sticky text-blue-400">
             <h2>All Notes</h2>
             <h2>Business</h2>
@@ -452,17 +467,18 @@
                 <h2 class="mx-2">New</h2>
             </div>
         </div>
-    
+
         <div class=" w-11/12 mx-3 mt-3 mb-1 ml-4  p-3 border-2 rounded-lg border-dotted border-[rgb(233,230,225)]">
             <p class="text-gray-400 px-2">02 January 2021</p>
             <h1 class="text-xl px-2 mb-3">Give Review for design</h1>
-            <p class="px-2 my-3">It has roots in a peice of classical Latin literature from 45 BC, making it over 2023 years old</p>
+            <p class="px-2 my-3">It has roots in a peice of classical Latin literature from 45 BC, making it over 2023
+                years old</p>
             <div class="flex py-3">
                 <i class="fa-solid fa-star text-xl px-2"></i>
                 <i class="fa-solid fa-trash-can text-xl px-2"></i>
             </div>
         </div>
-    
+
         <div class=" w-11/12 mx-3 mt-3 mb-1 ml-4  p-3 border-2 rounded-lg border-dotted border-[rgb(233,230,225)]">
             <p class="text-gray-400 px-2">17 January 2022</p>
             <h1 class="text-xl px-2 mb-3">Give salary to employee</h1>
@@ -472,7 +488,7 @@
                 <i class="fa-solid fa-trash-can text-xl px-2"></i>
             </div>
         </div>
-    
+
         <div class=" w-11/12 mx-3 mt-3 mb-1 ml-4  p-3 border-2 rounded-lg border-dotted border-[rgb(233,230,225)]">
             <p class="text-gray-400 px-2">02 January 2020</p>
             <h1 class="text-xl px-2 mb-3">Launch new template</h1>
@@ -482,7 +498,7 @@
                 <i class="fa-solid fa-trash-can text-xl px-2"></i>
             </div>
         </div>
-    
+
         <div class=" w-11/12 mx-3 mt-3 mb-1 ml-4  p-3 border-2 rounded-lg border-dotted border-[rgb(233,230,225)]">
             <p class="text-gray-400 px-2">22 August 2021</p>
             <h1 class="text-xl px-2 mb-3">Nightout with friends</h1>
@@ -492,7 +508,7 @@
                 <i class="fa-solid fa-trash-can text-xl px-2"></i>
             </div>
         </div>
-    
+
         <div class=" w-11/12 mx-3 mt-3 mb-1 ml-4  p-3 border-2 rounded-lg border-dotted border-[rgb(233,230,225)]">
             <p class="text-gray-400 px-2">01 December 2021</p>
             <h1 class="text-xl px-2 mb-3">Change a Design</h1>
@@ -502,22 +518,23 @@
                 <i class="fa-solid fa-trash-can text-xl px-2"></i>
             </div>
         </div>
-    
+
         <div class=" w-11/12 mx-3 mt-3 mb-1 ml-4  p-3 border-2 rounded-lg border-dotted border-[rgb(233,230,225)]">
             <p class="text-gray-400 px-2">10 January 2021</p>
             <h1 class="text-xl px-2 mb-3">Meeting with Mr.Lee</h1>
-            <p class="px-2 my-3">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model</p>
+            <p class="px-2 my-3">Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                default model</p>
             <div class="flex py-3">
                 <i class="fa-solid fa-star text-xl px-2"></i>
                 <i class="fa-solid fa-trash-can text-xl px-2"></i>
             </div>
         </div>
     </nav>
-        <!-- het gimenu  -->
-        <div class="flex text-base">
-          <div class="w-1/6">menu</div>
-          <div class="w-5/6">
-          <!-- nav linh -->
+    <!-- het gimenu  -->
+    <div class="flex text-base">
+        <div class="w-1/6">menu</div>
+        <div class="w-5/6">
+            <!-- nav linh -->
             <div class="navbar__top flex items-center justify-between fixed top-0 right-0 left-72 bg-slate-100 h-14">
                 <div class="basis-5/6 flex items-center w-28">
                     <i class="p-2 mx-2 icon__nav cursor-pointer">
@@ -576,44 +593,44 @@
                                 <p class="ml-2">Hindi</p>
                             </div>
                             <div class="flex items-center px-3 py-1 bg-purple-200 hover:bg-slate-600 rounded-md">
-                                <i class="w-1/5"><img
-                                        src="https://www.welt-flaggen.de/data/flags/w1600/ae.png"
+                                <i class="w-1/5"><img src="https://www.welt-flaggen.de/data/flags/w1600/ae.png"
                                         alt="Saudi Arabia" /></i>
                                 <p class="ml-2">Saudi Arabia</p>
                             </div>
                         </div>
                     </i>
-                    <i class="icon__nav relative hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md" onmouseover="listDashboards()"><svg
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
+                    <i class="icon__nav relative hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md"
+                        onmouseover="listDashboards()"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z" />
                         </svg>
-                        <div class="modal__dashboard absolute top-12 right-0 w-60 border-dashed border-2 border-gray-400 rounded-md bg-white p-2 hidden">
-                          <div class="flex">
-                            <button class="w-28 hover:bg-slate-300 rounded-lg px-3 py-1 border border-dashed">
-                              <i class="fa-solid fa-gauge text-3xl"></i>
-                              <h2>Dashboard</h2>
-                              <p>view all</p>
-                            </button>
-                            <button class="w-28 hover:bg-slate-300 rounded-lg px-3 py-1 border border-dashed">
-                              <i class="fa-regular fa-square text-3xl"></i>
-                              <h2>Applications</h2>
-                              <p>view all</p>
-                            </button>
-                          </div>
-                          <div class="flex">
-                            <button class="w-28 hover:bg-slate-300 rounded-lg px-3 py-1 border border-dashed">
-                              <i class="fa-solid fa-book text-3xl"></i>
-                              <h2>Pages</h2>
-                              <p>view all</p>
-                            </button>
-                            <button class="w-28 hover:bg-slate-300 rounded-lg px-3 py-1 border border-dashed">
-                              <i class="fa-solid fa-table-columns text-3xl"></i>
-                              <h2>Layouts</h2>
-                              <p>view all</p>
-                            </button>
-                          </div>
+                        <div
+                            class="modal__dashboard absolute top-12 right-0 w-60 border-dashed border-2 border-gray-400 rounded-md bg-white p-2 hidden">
+                            <div class="flex">
+                                <button class="w-28 hover:bg-slate-300 rounded-lg px-3 py-1 border border-dashed">
+                                    <i class="fa-solid fa-gauge text-3xl"></i>
+                                    <h2>Dashboard</h2>
+                                    <p>view all</p>
+                                </button>
+                                <button class="w-28 hover:bg-slate-300 rounded-lg px-3 py-1 border border-dashed">
+                                    <i class="fa-regular fa-square text-3xl"></i>
+                                    <h2>Applications</h2>
+                                    <p>view all</p>
+                                </button>
+                            </div>
+                            <div class="flex">
+                                <button class="w-28 hover:bg-slate-300 rounded-lg px-3 py-1 border border-dashed">
+                                    <i class="fa-solid fa-book text-3xl"></i>
+                                    <h2>Pages</h2>
+                                    <p>view all</p>
+                                </button>
+                                <button class="w-28 hover:bg-slate-300 rounded-lg px-3 py-1 border border-dashed">
+                                    <i class="fa-solid fa-table-columns text-3xl"></i>
+                                    <h2>Layouts</h2>
+                                    <p>view all</p>
+                                </button>
+                            </div>
                         </div>
                     </i>
                     <i onclick="onNight(this)"
@@ -624,47 +641,50 @@
                                 d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
                         </svg>
                     </i>
-                    <i class="icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md w-14" onmouseover="listSettings()"><img
-                            class="rounded-full"
+                    <i class="icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md w-14"
+                        onmouseover="listSettings()"><img class="rounded-full"
                             src="https://i.pinimg.com/originals/26/ee/73/26ee73636f3429e3df522ae219c064fd.png"
                             alt="avatar" />
-                        <div class="modal__settings absolute top-14 right-0 w-60 bg-white z-50 shadow-md rounded-xl hidden">
-                          <div class="flex justify-center py-4 border-b border-solid border-gray-500 items-center">
-                            <img class="w-9 h-9 rounded-md" src="https://i.pinimg.com/originals/26/ee/73/26ee73636f3429e3df522ae219c064fd.png" alt="">
+                        <div
+                            class="modal__settings absolute top-14 right-0 w-60 bg-white z-50 shadow-md rounded-xl hidden">
+                            <div class="flex justify-center py-4 border-b border-solid border-gray-500 items-center">
+                                <img class="w-9 h-9 rounded-md"
+                                    src="https://i.pinimg.com/originals/26/ee/73/26ee73636f3429e3df522ae219c064fd.png"
+                                    alt="">
+                                <div class="flex flex-col">
+                                    <h1 class="ml-2">Allie Grater</h1>
+                                    <p class="ml-2 text-sm">alliegrater@gamil.com</p>
+                                </div>
+                            </div>
                             <div class="flex flex-col">
-                              <h1 class="ml-2">Allie Grater</h1>
-                              <p class="ml-2 text-sm">alliegrater@gamil.com</p>
+                                <div class="flex items-center py-2 px-4 hover:bg-slate-300">
+                                    <i class="fa-solid fa-house px-4 w-12"></i>
+                                    <h2 class="ml-2">My Profiles</h2>
+                                </div>
+                                <div class="flex items-center py-2 px-4 hover:bg-slate-300">
+                                    <i class="fa-solid fa-gauge px-4 w-12"></i>
+                                    <h2 class="ml-2">Settings</h2>
+                                </div>
+                                <div class="flex items-center py-2 px-4 hover:bg-slate-300">
+                                    <i class="fa-solid fa-book px-4 w-12"></i>
+                                    <h2 class="ml-2">Billing</h2>
+                                </div>
+                                <div class="flex items-center py-2 px-4 hover:bg-slate-300">
+                                    <i class="fa-regular fa-credit-card px-4 w-12"></i>
+                                    <h2 class="ml-2">Manage Team</h2>
+                                </div>
+                                <div class="flex items-center py-2 px-4 hover:bg-slate-300">
+                                    <i class="fa-solid fa-shield px-4 w-12"></i>
+                                    <h2 class="ml-2">My Events</h2>
+                                </div>
+                                <div class="flex items-center py-2 px-4 hover:bg-slate-300">
+                                    <i class="fa-solid fa-sd-card px-4 w-12"></i>
+                                    <h2 class="ml-2">Support Ticket</h2>
+                                </div>
                             </div>
-                          </div>
-                          <div class="flex flex-col">
-                            <div class="flex items-center py-2 px-4 hover:bg-slate-300">
-                              <i class="fa-solid fa-house px-4 w-12"></i>
-                              <h2 class="ml-2">My Profiles</h2>
+                            <div class="flex bg-teal-500 items-center justify-center rounded-b-xl h-10">
+                                <h1 class="text-white">SIGN OUT</h1>
                             </div>
-                            <div class="flex items-center py-2 px-4 hover:bg-slate-300">
-                              <i class="fa-solid fa-gauge px-4 w-12"></i>
-                              <h2 class="ml-2">Settings</h2>
-                            </div>
-                            <div class="flex items-center py-2 px-4 hover:bg-slate-300">
-                              <i class="fa-solid fa-book px-4 w-12"></i>
-                              <h2 class="ml-2">Billing</h2>
-                            </div>
-                            <div class="flex items-center py-2 px-4 hover:bg-slate-300">
-                              <i class="fa-regular fa-credit-card px-4 w-12"></i>
-                              <h2 class="ml-2">Manage Team</h2>
-                            </div>
-                            <div class="flex items-center py-2 px-4 hover:bg-slate-300">
-                              <i class="fa-solid fa-shield px-4 w-12"></i>
-                              <h2 class="ml-2">My Events</h2>
-                            </div>
-                            <div class="flex items-center py-2 px-4 hover:bg-slate-300">
-                              <i class="fa-solid fa-sd-card px-4 w-12"></i>
-                              <h2 class="ml-2">Support Ticket</h2>
-                            </div>
-                          </div>
-                          <div class="flex bg-teal-500 items-center justify-center rounded-b-xl h-10">
-                            <h1 class="text-white">SIGN OUT</h1>
-                          </div>
                         </div>
                     </i>
                     <i class="icon__nav hover:bg-cyan-400 cursor-pointer py-2 px-3 rounded-md"><svg
@@ -733,22 +753,22 @@
                                 </h5>
                                 <ul class="flex gap-4">
                                     <li
-                                        class="shadow-xl ring-gray-900/5 rounded-lg w-from h-auto bg-slate-50 text-center p-3">
+                                        class="border-dotted border border-indigo-600 shadow-xl ring-gray-900/5 rounded-lg w-from h-auto bg-slate-50 text-center p-3">
                                         <h3 class="text-gray-500">Total Earnings</h3>
                                         <h1 class="text-xl">$10,705</h1>
                                     </li>
                                     <li
-                                        class="shadow-xl ring-gray-900/5 rounded-lg w-from h-auto bg-slate-50 text-center p-3">
+                                        class="border-dotted border border-indigo-600 shadow-xl ring-gray-900/5 rounded-lg w-from h-auto bg-slate-50 text-center p-3">
                                         <h3 class="text-gray-500">Awards</h3>
                                         <h1 class="text-xl">45</h1>
                                     </li>
                                     <li
-                                        class="shadow-xl ring-gray-900/5 rounded-lg w-from h-auto bg-slate-50 text-center p-3">
+                                        class="border-dotted border border-indigo-600 shadow-xl ring-gray-900/5 rounded-lg w-from h-auto bg-slate-50 text-center p-3">
                                         <h3 class="text-gray-500">Experience</h3>
                                         <h1 class="text-xl">8+</h1>
                                     </li>
                                     <li
-                                        class="border-dotted border-2 border-indigo-600 shadow-xl ring-gray-900/5 rounded-lg w-from h-auto bg-slate-50 text-center p-3">
+                                        class="border-dotted border border-indigo-600 shadow-xl ring-gray-900/5 rounded-lg w-from h-auto bg-slate-50 text-center p-3">
                                         <h3 class="text-gray-500">City</h3>
                                         <h1 class="text-xl">New york</h1>
                                     </li>
@@ -810,153 +830,161 @@
             <!-- end profile -->
 
             <!-- Profile Overview tuan anh -->
-            
+
             <!-- start profile overview-->
             <section class="profile-overview">
                 <div class="container">
-                  <div class="row">
+                    <div class="row">
 
-                    <div class="col-md-12">
-                      <div class="profile-info">
-                        <h4 class="profile-name">Personal Information</h4>
+                        <div class="col-md-12">
+                            <div class="profile-info">
+                                <h4 class="profile-name">Personal Information</h4>
 
-                        <p class="profile-bio">
-                            Hi I'm Allie Grater, Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.
-                        </p>
-                        <p>                     
-                            Full Name:  &nbsp; &nbsp;  &nbsp; Allie Grater
-                        </p>
-                        <p>
-                            E-mail: &nbsp; alliegrater@luno.com
-                        </p>
-                        <p>
-                            Phone:   &nbsp;   +01 (741) 852 123
-                        </p>
-                        <p>
-                            Location:  &nbsp;&nbsp; California, USA
-                        </p>
-                        <p>
-                            Website:   &nbsp;&nbsp; http://website.com
-                        </p>
+                                <p class="profile-bio">
+                                    Hi I'm Allie Grater, Contrary to popular belief, Lorem Ipsum is not simply random
+                                    text. It has roots in a piece of classical Latin literature.
+                                </p>
+                                <p>
+                                    Full Name: &nbsp; &nbsp; &nbsp; Allie Grater
+                                </p>
+                                <p>
+                                    E-mail: &nbsp; alliegrater@luno.com
+                                </p>
+                                <p>
+                                    Phone: &nbsp; +01 (741) 852 123
+                                </p>
+                                <p>
+                                    Location: &nbsp;&nbsp; California, USA
+                                </p>
+                                <p>
+                                    Website: &nbsp;&nbsp; http://website.com
+                                </p>
 
-                      </div>
+                            </div>
 
 
-                  <div class="row">
+                            <div class="row">
 
-                      <div class="profile-skills">
-                        <h4 class="profile-skills-title">Skills Information</h4>
-                        <p class="profile-bio">Augue mauris dignissim arcu, ut venenatis metus ante eu orci. Donec non maximus neque, ut finibus ex. Read more</p>
+                                <div class="profile-skills">
+                                    <h4 class="profile-skills-title">Skills Information</h4>
+                                    <p class="profile-bio">Augue mauris dignissim arcu, ut venenatis metus ante eu orci.
+                                        Donec non maximus neque, ut finibus ex. Read more</p>
 
-                            <h1 class="display-4">Bootstrap</h1>
-                            <div class="progress">
-                                <div class="progress-bar" style="background-color: #443d7c;">
-                                    <span>95%</span>
+                                    <h1 class="display-4">Bootstrap</h1>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="background-color: #443d7c;">
+                                            <span>95%</span>
+                                        </div>
+                                    </div>
+                                    <h1 class="display-4">HTML5</h1>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="background-color: #28ab58;">
+                                            <span>77%</span>
+                                        </div>
+                                    </div>
+                                    <h1 class="display-4">JQUERRY</h1>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="background-color: #1f2d94;">
+                                            <span>66%</span>
+                                        </div>
+                                    </div>
+                                    <h1 class="display-4">RESPONSIVE:</h1>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="background-color: #7f225e;">
+                                            <span>80%</span>
+                                        </div>
+                                    </div>
+                                    <h1 class="display-4">CSS3:</h1>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="background-color: #356c10;">
+                                            <span>85%</span>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                            <h1 class="display-4">HTML5</h1>
-                            <div class="progress">
-                                <div class="progress-bar" style="background-color: #28ab58;">
-                                    <span>77%</span>
-                                </div>
-                              </div>
-                            <h1 class="display-4">JQUERRY</h1>
-                              <div class="progress">
-                                  <div class="progress-bar" style="background-color: #1f2d94;">
-                                      <span>66%</span>
-                                  </div>
-                                </div>
-                            <h1 class="display-4">RESPONSIVE:</h1>
-                            <div class="progress">
-                                <div class="progress-bar" style="background-color: #7f225e;">
-                                    <span>80%</span>
-                                </div>
-                              </div>
-                            <h1 class="display-4">CSS3:</h1>
-                            <div class="progress">
-                                <div class="progress-bar" style="background-color: #356c10;">
-                                    <span>85%</span>
-                                </div>
-                              </div>
-                      </div>
-                  </div>
+                            </div>
 
-                </div>
-            </div>
-<!--
+                        </div>
+                    </div>
+                    <!--
     Post
 -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="post-main">
-                    <input type="text" name="post" id="post" placeholder="Post" width="500" height="200" >
-                    <button>Post</button>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="post-main">
+                                <input type="text" name="post" id="post" placeholder="Post" width="500" height="200">
+                                <button>Post</button>
 
 
-                        <p>
-                            Allie Grater posted a status
-                        </p>
-                        <p style="opacity: 0.5;">
-                            1 hours ago
-                        </p>
-                        <h2 style="margin-top: 20px;">Hampden-Sydney College in Virginia, looked up one of the more obscure</h2>
-                        <h2 style="margin-top: 20px;">It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.</h2>
-                        <p style="color: rgb(17, 31, 220);margin-top: 20px;">
-                            #Design&nbsp;#HTML&nbsp;#ThemeMakker
-                        </p>
-                        <blockquote class="imgur-embed-pub" lang="en" data-id="IgX2KLh" data-context="false" ><a href="//imgur.com/IgX2KLh"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-                       <!--comment-->
-                        <div class="comment">
-                            <h1 class="name">Rose Rivera</h1>
-                        <p class="active-status">1 hour ago</p>
-                    <p class="content">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                <p>
+                                    Allie Grater posted a status
+                                </p>
+                                <p style="opacity: 0.5;">
+                                    1 hours ago
+                                </p>
+                                <h2 style="margin-top: 20px;">Hampden-Sydney College in Virginia, looked up one of the
+                                    more obscure</h2>
+                                <h2 style="margin-top: 20px;">It has roots in a piece of classical Latin literature from
+                                    45 BC, making it over 2000 years old. Richard McClintock.</h2>
+                                <p style="color: rgb(17, 31, 220);margin-top: 20px;">
+                                    #Design&nbsp;#HTML&nbsp;#ThemeMakker
+                                </p>
+                                <blockquote class="imgur-embed-pub" lang="en" data-id="IgX2KLh" data-context="false"><a
+                                        href="//imgur.com/IgX2KLh"></a></blockquote>
+                                <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+                                <!--comment-->
+                                <div class="comment">
+                                    <h1 class="name">Rose Rivera</h1>
+                                    <p class="active-status">1 hour ago</p>
+                                    <p class="content">It is a long established fact that a reader will be distracted by
+                                        the readable content of a page when looking at its layout.</p>
+                                </div>
+                                <div class="comment">
+                                    <h1 class="name"> Robert Hammer</h1>
+                                    <p class="active-status">1 hour ago</p>
+                                    <p class="content">If you are going to use a passage of Lorem Ipsum, you need to be
+                                        sure there isn't anything embarrassing</p>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="comment">
-                        <h1 class="name"> Robert Hammer</h1>
-                    <p class="active-status">1 hour ago</p>
-                <p class="content">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing</p>
-                </div>
+                    <!--End post-->
 
-
-
-            </div>
-                </div>
-
-            </div>
-            <!--End post-->
-
-            <!-- start category -->
-            <div class="row">
-                <div class="col-md-12" id="cate"  >
-                    <div class="cate">
-                    <h1 style="font-size: 24px;">Categories</h1>
-                    <ul>
-                        <li>
-                            Web design
-                        </li>
-                        <li>
-                            Reactjs
-                        </li>
-                        <li>
-                            Music
-                        </li>
-                        <li>
-                            Trending
-                        </li>
-                        <li>
-                            Newest Blog
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                    <!-- start category -->
+                    <div class="row">
+                        <div class="col-md-12" id="cate">
+                            <div class="cate">
+                                <h1 style="font-size: 24px;">Categories</h1>
+                                <ul>
+                                    <li>
+                                        Web design
+                                    </li>
+                                    <li>
+                                        Reactjs
+                                    </li>
+                                    <li>
+                                        Music
+                                    </li>
+                                    <li>
+                                        Trending
+                                    </li>
+                                    <li>
+                                        Newest Blog
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
 
 
 
 
                 </div>
-              </section>
+            </section>
         </div>
     </div>
 
